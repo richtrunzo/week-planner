@@ -1,15 +1,18 @@
 .row{
   display: flex;
-  margin: 0 auto;
+  margin: 20px auto;
   justify-content: center;
-
 }
-.add-entry{
+
+.column{
+  display: inline;
+}
+#add-entry-button{
   position: relative;
-  top: 13rem;
+  top: 5rem;
   padding: 10px 40px;
   background-color: #95BCF2;
-  box-shadow: 10px 5px 5px black ;
+  box-shadow: 2px 5px 5px black;
 }
 .text{
   font-family: 'Balsamiq Sans', cursive, sans-serif;
@@ -28,6 +31,9 @@
 }
 
 .modal-content {
+  border: none;
+  background-color: white;
+  padding: 20px 50px;
   width: 50%;
   margin: 0 auto;
   position: relative;
@@ -35,6 +41,17 @@
 }
 
 .col-button{
-  position: relative;
-  right: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#modal-button {
+  padding: 5px 15px;
+  border: solid black;
+  box-shadow: 5px 3px 5px black;
+}
+
+.sel-border {
+  border: black solid;
 }

@@ -10,17 +10,13 @@
 </head>
 <body>
   <div class="container">
-
     <div data-view="view" class="hidden">
       <div class="row">
         <h1 class="text">Weekly Planner</h1>
       </div>
 
-
-
-
       <div class="row">
-        <button type="submit" class="add-entry text open-modal">Add Entry</button>
+        <button id="add-entry-button" class="text">Add Entry</button>
       </div>
     </div>
 
@@ -30,9 +26,9 @@
           <h1 class="text">Add Entry</h1>
         </div>
 
-        <div class="row modal">
+        <div class="modal">
           <div class="column">
-            <select type="dropdown">
+            <select class="text sel-border" type="dropdown">
               <option>Day of Week</option>
               <option>Sunday</option>
               <option>Monday</option>
@@ -45,7 +41,7 @@
           </div>
 
           <div class="column">
-            <select type="dropdown">
+            <select class="text sel-border" type="dropdown">
               <option>Time</option>
               <option>12:00</option>
               <option>1:00</option>
@@ -62,8 +58,9 @@
             </select>
           </div>
         </div>
-        <div class="row modal">
-          <textarea name="description" id="" cols="100" rows="10" placeholder="Description"></textarea>
+
+        <div class="row">
+          <textarea id="modal-description" cols="150" rows="10" placeholder="Description" class="sel-border"></textarea>
         </div>
         <div class="row">
           <div class="col-button">
