@@ -9,7 +9,7 @@
 }
 #add-entry-button{
   position: relative;
-  top: 5rem;
+  top: 10rem;
   padding: 10px 40px;
   background-color: #95BCF2;
   box-shadow: 2px 5px 5px black;
@@ -54,4 +54,16 @@
 
 .sel-border {
   border: black solid;
+}
+
+.modal {
+  position: absolute;
+  top: 100px;
+  right: 150px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.7);
 }
