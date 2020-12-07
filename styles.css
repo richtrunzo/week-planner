@@ -97,7 +97,17 @@
   width: calc(100%/3);
   border: solid black;
 }
+
+table{
+  width: 100%;
+  text-align: left;
+}
+
+th {
+  background-color: #cccccc;
+
+}
+
 tr:nth-child(odd){
-background-color: gray;
-width: 100%;
+background-color: #eeeeee;
 }
