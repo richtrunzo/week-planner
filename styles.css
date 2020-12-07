@@ -46,7 +46,7 @@
   justify-content: flex-end;
 }
 
-#modal-button {
+#submit-modal-button {
   padding: 5px 15px;
   border: solid black;
   box-shadow: 5px 3px 5px black;
@@ -59,7 +59,7 @@
 .modal {
   position: absolute;
   top: 100px;
-  right: 150px;
+  right: 15%;
 }
 
 .overlay {
