@@ -14,3 +14,7 @@
 .text{
   font-family: 'Balsamiq Sans', cursive, sans-serif;
 }
+
+.hidden {
+  display: none;
+}
