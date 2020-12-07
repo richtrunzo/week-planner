@@ -11,7 +11,7 @@
 <body class="">
   <div class="overlay"></div>
   <div class="container">
-    <div data-view="view" class="">
+    <div data-view="view" class="hidden">
       <div class="row">
         <h1 class="text">Weekly Planner</h1>
       </div>
@@ -70,7 +70,39 @@
         </div>
       </div>
     </div>
-    <div data-view="view" class=''></div>
+    <div data-view="view" class='view-entries'>
+      <div class="row">
+        <h1 class="text">Weekly Planner</h1>
+      </div>
+
+      <div class="row-days">
+        <div class="column-seventh">
+          <button class="text planner-button" id="button-sunday">Sunday</button>
+        </div>
+        <div class="column-seventh">
+          <button class="text planner-button" id="button-monday">Monday</button>
+        </div>
+        <div class="column-seventh">
+          <button class="text planner-button" id="button-tuesday">Tuesday</button>
+        </div>
+        <div class="column-seventh">
+          <button class="text planner-button" id="button-wednesday">Wednesday</button>
+        </div>
+        <div class="column-seventh">
+          <button class="text planner-button" id="button-thursday">Thursday</button>
+        </div>
+        <div class="column-seventh">
+          <button class="text planner-button" id="button-friday">Friday</button>
+        </div>
+        <div class="column-seventh">
+          <button class="text planner-button" id="button-saturday">Saturday</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <button class="text" id="add-entry"></button>
+      </div>
+    </div>
   </div>
   <script src="main.js"></script>
 </body>

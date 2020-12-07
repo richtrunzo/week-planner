@@ -67,3 +67,17 @@
   height: 100%;
   background-color:rgba(0, 0, 0, 0.7);
 }
+
+.column-seventh {
+  display: inline;
+}
+
+.row-days {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.planner-button {
+  width: 90px;
+  height: 90px;
+}
