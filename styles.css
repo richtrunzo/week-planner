@@ -1,0 +1,16 @@
+.row{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+
+}
+.add-entry{
+  position: relative;
+  top: 13rem;
+  padding: 10px 40px;
+  background-color: #95BCF2;
+  box-shadow: 10px 5px 5px black ;
+}
+.text{
+  font-family: 'Balsamiq Sans', cursive, sans-serif;
+}
