@@ -13,6 +13,7 @@ var $saturday = document.getElementById('button-saturday');
 var $mondayTable = document.querySelectorAll('.monday-table');
 var $tuesdayTable = document.querySelectorAll('.tuesday-table');
 
+
 $addEntryButton.addEventListener('click', function (event) {
   $modal.className = 'modal';
   $body.className = 'overlay';
@@ -29,3 +30,9 @@ $monday.addEventListener('click', function (event) {
   $tuesdayTable[0].className = 'row text tuesday-table hidden';
   $tuesdayTable[1].className = 'row text tuesday-table hidden';
 });
+})
+
+// $sunday.addEventListener('click', function(event){
+
+// })
+// document.addEventListener()
