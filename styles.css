@@ -27,5 +27,14 @@
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.modal {
+.modal-content {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+
+.col-button{
+  position: relative;
+  right: 0px;
 }
