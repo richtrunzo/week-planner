@@ -7,7 +7,7 @@
 .column{
   display: inline;
 }
-#add-entry-button{
+#add-entry-button {
   position: relative;
   top: 10rem;
   padding: 10px 40px;
@@ -80,4 +80,20 @@
 .planner-button {
   width: 90px;
   height: 90px;
+}
+
+#add-entry {
+  padding: 10px 40px;
+  background-color: #95BCF2;
+  box-shadow: 2px 5px 5px black;
+}
+
+.col-time {
+  width: calc(100%/6);
+  border: solid black;
+}
+
+.col-description {
+  width: calc(100%/3);
+  border: solid black;
 }
