@@ -11,7 +11,7 @@
 <body class="">
   <div class="overlay"></div>
   <div class="container">
-    <div data-view="view" class="hidden">
+    <div data-view="add-entry" class="view">
       <div class="row">
         <h1 class="text">Weekly Planner</h1>
       </div>
@@ -31,13 +31,13 @@
           <div class="column">
             <select class="text sel-border" type="dropdown">
               <option>Day of Week</option>
-              <option>Sunday</option>
-              <option>Monday</option>
-              <option>Tuesday</option>
-              <option>Wednesday</option>
-              <option>Thursday</option>
-              <option>Friday</option>
-              <option>Saturday</option>
+              <option value="sunday">Sunday</option>
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
             </select>
           </div>
 
@@ -70,7 +70,7 @@
         </div>
       </div>
     </div>
-    <div data-view="view" class='view-entries'>
+    <div data-view="view" class='view-entries hidden'>
       <div class="row">
         <h1 class="text">Weekly Planner</h1>
       </div>
@@ -169,75 +169,6 @@
             </tr>
           </table>
         </div>
-        </div>
-      </div>
-
-      <div class="row tuesday-table text">
-        <h1>Scheduled Events for Tuesday</h1>
-      </div>
-      <div class="row tuesday-table">
-        <div class="col-time">
-          <table>
-            <tr>
-              <th>Time</th>
-            </tr>
-            <tr>
-              <td>9:00</td>
-            </tr>
-            <tr>
-              <td>1:00</td>
-            </tr>
-            <tr>
-              <td>2:00</td>
-            </tr>
-            <tr>
-              <td>4:00</td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-            </tr>
-
-          </table>
-        </div>
-        <div class="col-description">
-          <table>
-            <tr>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td>Apply to Jobs</td>
-            </tr>
-            <tr>
-              <td>Eat Lunch</td>
-            </tr>
-            <tr>
-              <td>Practice Algorithms</td>
-            </tr>
-            <tr>
-              <td>Work on Side Project</td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-            </tr>
-          </table>
         </div>
       </div>
       </div>

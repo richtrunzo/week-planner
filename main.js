@@ -9,13 +9,44 @@ var $wednesday = document.getElementById('button-wednesday');
 var $thursday = document.getElementById('button-thursday');
 var $friday = document.getElementById('button-friday');
 var $saturday = document.getElementById('button-saturday');
-
 var $mondayTable = document.querySelectorAll('.monday-table');
 var $tuesdayTable = document.querySelectorAll('.tuesday-table');
 var $select = document.querySelectorAll('.sel-border');
+var $description = document.getElementById('modal-description');
 
-
-
+var data = {
+  days: {
+  sunday: {
+    time: '',
+    description: '',
+  },
+  monday: {
+    time: '',
+    description: ''
+  },
+  tuesday: {
+    time: '',
+    description: ''
+  },
+  wednesday: {
+    time: '',
+    description: ''
+  },
+  thursday: {
+    time: '',
+    description: ''
+  },
+  friday: {
+    time: '',
+    description: ''
+  },
+  saturday: {
+    time: '',
+    description: ''
+  }
+}
+};
+console.log(data);
 $addEntryButton.addEventListener('click', function (event) {
   $modal.className = 'modal';
   $body.className = 'overlay';
@@ -24,6 +55,34 @@ $addEntryButton.addEventListener('click', function (event) {
 $submitModalButton.addEventListener('click', function (event) {
   $modal.className = 'hidden';
   $body.className = '';
+  if ($select[0].value === 'sunday'){
+    data.days.sunday.time = $select[1].value;
+    data.days.sunday.description = $description.value
+  }
+  else if ($select[0].value === 'monday') {
+    data.days.monday.time = $select[1].value;
+    data.days.monday.description = $description.value
+  }
+  else if ($select[0].value === 'tuesday') {
+    data.days.tuesday.time = $select[1].value;
+    data.days.tuesday.description = $description.value
+  }
+  else if ($select[0].value === 'wednesday') {
+    data.days.wednesday.time = $select[1].value;
+    data.days.wednesday.description = $description.value
+  }
+  else if ($select[0].value === 'thursday') {
+    data.days.thursday.time = $select[1].value;
+    data.days.thursday.description = $description.value
+  }
+  else if ($select[0].value === 'friday') {
+    data.days.friday.time = $select[1].value;
+    data.days.friday.description = $description.value
+  }
+  else {
+    data.days.saturday.time = $select[1].value;
+    data.days.saturday.description = $description.value
+  }
 });
 
 $monday.addEventListener('click', function (event) {
@@ -32,50 +91,3 @@ $monday.addEventListener('click', function (event) {
   $tuesdayTable[0].className = 'row text tuesday-table hidden';
   $tuesdayTable[1].className = 'row text tuesday-table hidden';
 });
-})
-
-var days = [
-  $sunday, $monday, $tuesday, $wednesday, $thursday, $friday, $saturday];
-
-  for(var i = 0; i < days.length; i++){
-    days[i].addEventListener('click', function(event){
-      if(days[i] !== event.target){
-        days[i].className = 'hidden';
-      }
-      else{
-        day
-      }
-    })
-  }
-
-  // var data = [
-  //   {
-
-  //   },
-  //   {
-
-  //   },
-  //   {
-
-  //   },
-  //   {
-
-  //   },
-  //   {
-
-  //   },
-  //   {
-
-  //   },
-  //   {
-
-  //   },
-  //   {
-
-  //   }
-  // ]
-
-// $sunday.addEventListener('click', function(event){
-
-// })
-// document.addEventListener()
