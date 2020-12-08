@@ -12,6 +12,8 @@ var $saturday = document.getElementById('button-saturday');
 
 var $mondayTable = document.querySelectorAll('.monday-table');
 var $tuesdayTable = document.querySelectorAll('.tuesday-table');
+var $select = document.querySelectorAll('.sel-border');
+
 
 
 $addEntryButton.addEventListener('click', function (event) {
@@ -31,6 +33,47 @@ $monday.addEventListener('click', function (event) {
   $tuesdayTable[1].className = 'row text tuesday-table hidden';
 });
 })
+
+var days = [
+  $sunday, $monday, $tuesday, $wednesday, $thursday, $friday, $saturday];
+
+  for(var i = 0; i < days.length; i++){
+    days[i].addEventListener('click', function(event){
+      if(days[i] !== event.target){
+        days[i].className = 'hidden';
+      }
+      else{
+        day
+      }
+    })
+  }
+
+  // var data = [
+  //   {
+
+  //   },
+  //   {
+
+  //   },
+  //   {
+
+  //   },
+  //   {
+
+  //   },
+  //   {
+
+  //   },
+  //   {
+
+  //   },
+  //   {
+
+  //   },
+  //   {
+
+  //   }
+  // ]
 
 // $sunday.addEventListener('click', function(event){
 
