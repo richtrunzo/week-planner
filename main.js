@@ -14,6 +14,8 @@ var $tuesdayTable = document.querySelectorAll('.tuesday-table');
 var $select = document.querySelectorAll('.sel-border');
 var $description = document.getElementById('modal-description');
 var $scheduleHeader = document.querySelector('.schedule-header');
+var $time = document.querySelectorAll('.time');
+console.log($time.textContent);
 
 var data = {
   days: {
