@@ -11,7 +11,7 @@
 <body class="">
   <div class="overlay"></div>
   <div class="container">
-    <div data-view="add-entry" class="view">
+    <div data-view="add-entry" class="view hidden">
       <div class="row">
         <h1 class="text">Weekly Planner</h1>
       </div>
@@ -70,7 +70,7 @@
         </div>
       </div>
     </div>
-    <div data-view="view" class='view-entries hidden'>
+    <div data-view="view" class='view-entries'>
       <div class="row">
         <h1 class="text">Weekly Planner</h1>
       </div>
@@ -102,10 +102,10 @@
       <div class="row">
         <button class="text" id="add-entry">Add Entry</button>
       </div>
-      <div class="row text monday-table hidden">
-        <h1>Scheduled Events for Monday</h1>
+      <div class="row text monday-table">
+        <h1 class="schedule-header">Scheduled Events for Monday</h1>
       </div>
-      <div class="row monday-table hidden">
+      <div class="row monday-table">
         <div class="col-time">
           <table>
             <tr>
